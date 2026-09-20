@@ -50,8 +50,7 @@ Link para colar na Google Play Console:
 
 **https://aln2025.github.io/ALNSYSTEM/privacidade/**
 
-> Para publicar a página: no GitHub, **Settings → Pages → Source: Deploy from branch `main` → Folder `/docs`**.  
-> Os arquivos HTML ficam na pasta `docs/` deste repositório.
+> **Settings → Pages → Build and deployment → Source: GitHub Actions** (workflow `pages-privacy.yml`, pasta `docs/`).
 
 ---
 
