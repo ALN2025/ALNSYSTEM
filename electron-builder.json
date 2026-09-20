@@ -1,0 +1,42 @@
+{
+  "appId": "com.alnsystem.meucontrole",
+  "productName": "Meu Controle",
+  "asar": true,
+  "npmRebuild": false,
+  "nodeGypRebuild": false,
+  "buildDependenciesFromSource": false,
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "desktop/main.js",
+    "dist/**/*",
+    "assets/aln-pc.ico",
+    "assets/icon.png",
+    "package.json",
+    "!node_modules/**/*",
+    "!android/**/*",
+    "!ios/**/*",
+    "!scripts/**/*",
+    "!logs/**/*",
+    "!release/**/*"
+  ],
+  "extraMetadata": {
+    "main": "desktop/main.js",
+    "dependencies": {},
+    "devDependencies": {}
+  },
+  "win": {
+    "target": [
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "assets/icon.png",
+    "artifactName": "Meu-Controle-PC.${ext}"
+  },
+  "portable": {
+    "artifactName": "Meu-Controle-PC.exe"
+  }
+}
